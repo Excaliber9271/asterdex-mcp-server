@@ -1,0 +1,85 @@
+{
+  "name": "asterdex-mcp-server",
+  "version": "1.0.0",
+  "description": "56-tool MCP server for Aster DEX perpetual futures — VPVR analysis, pump scanning, Binance flow signals, regime detection, and automated strategies",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/sdk.js",
+  "exports": {
+    ".": "./dist/sdk.js",
+    "./sdk": "./dist/sdk.js",
+    "./mcp": "./dist/mcp-server.js"
+  },
+  "bin": {
+    "aster-mcp": "dist/mcp-server.js",
+    "aster-cli": "dist/cli.js",
+    "aster-trader": "dist/trader-cli.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "aster",
+    "asterdex",
+    "trading",
+    "perpetuals",
+    "futures",
+    "defi",
+    "vpvr",
+    "volume-profile",
+    "ai-trading",
+    "claude",
+    "binance",
+    "hyperliquid"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tyranosurasmax/asterdex-mcp-server"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.mcp.json",
+    "start": "node dist/mcp-server.js",
+    "dev": "node --import tsx src/mcp-server.ts",
+    "cli": "node dist/cli.js",
+    "trader": "node dist/trader-cli.js",
+    "inspector": "npx @anthropic-ai/mcp-inspector node dist/mcp-server.js",
+    "dashboard": "node dist/terminal-dashboard.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
+    "test:cov": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
+    "lint": "eslint src --ext .ts --max-warnings 0",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "typecheck": "tsc -p tsconfig.mcp.json --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.24.3",
+    "@supabase/supabase-js": "^2.91.1",
+    "axios": "^1.6.2",
+    "blessed": "^0.1.81",
+    "blessed-contrib": "^4.11.0",
+    "bottleneck": "^2.19.5",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "ws": "^8.14.2"
+  },
+  "devDependencies": {
+    "@types/blessed": "^0.1.27",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4.17.23",
+    "@types/jest": "^29.5.8",
+    "@types/node": "^20.19.23",
+    "@types/ws": "^8.5.9",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
+    "eslint": "^8.54.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.1.0",
+    "ts-jest": "^29.1.1",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

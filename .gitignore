@@ -1,0 +1,44 @@
+# Build output
+dist/
+*.tsbuildinfo
+
+# Dependencies
+node_modules/
+
+# Environment — never commit real credentials
+.env
+.env.local
+.env.*.local
+.env.production
+
+# Cache
+.aster-cache.json
+.cache/
+.eslintcache
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+
+# Test coverage
+coverage/
+*.lcov
+
+# MCP config (may contain credentials)
+.mcp.json
+
+# Private keys / wallets
+*.pem
+*.key
+private_key*
+wallet*.json
